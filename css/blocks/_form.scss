@@ -1,0 +1,125 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+
+  &__input {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 8px 8px 8px 16px;
+    background: #f2f2f2;
+
+    font-family: Roboto;
+    color: #808080;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &__eye {
+    // На проценты изменить
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  &__label {
+    margin-left: 16px;
+
+    font-family: SF Pro Display;
+    color: var(#333);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  &__group {
+    &:nth-child(2) {
+      margin-top: 16px;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: flex-end;
+
+    &-text {
+      margin-left: 8px;
+    }
+  }
+
+  &__remember-me {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    color: var(#1a1a1a);
+    font-family: SF Pro Display;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+  }
+
+  &__btn {
+    margin-top: 32px;
+
+    &-line {
+      margin-top: 32px;
+
+      height: 1.5px;
+      background-color: #e5e5e5;
+    }
+
+    &-img {
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .form {
+    &__group {
+      &:nth-child(2) {
+        margin-top: 12px;
+      }
+    }
+
+    &__input {
+      margin-top: 0;
+    }
+
+    &__label {
+      display: none;
+    }
+
+    &__remember-me {
+      margin-top: 12px;
+    }
+
+    &__btn {
+      margin-top: 24px;
+
+      &-line {
+        margin-top: 24px;
+      }
+    }
+  }
+}

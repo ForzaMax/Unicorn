@@ -1,0 +1,43 @@
+.btn {
+  display: block;
+  width: 100%;
+
+  display: flex;
+  padding: 10px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 6px;
+  border: none;
+  background: #007aff;
+
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background: #0066d3;
+  }
+
+  &_google {
+    padding: 10px 16px;
+    background: #333;
+    flex-direction: row;
+    font-family: SF Pro Display;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+
+    &:hover {
+      background: #262626;
+    }
+  }
+}

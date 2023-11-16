@@ -1,0 +1,31 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin-top: 8px;
+    margin-right: 10px;
+  }
+
+  &_adaptive {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .logo {
+    display: none;
+
+    &_adaptive {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: auto;
+      
+    }
+
+    &__icon {
+      margin-top: 0;
+    }
+  }
+}

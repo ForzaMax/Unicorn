@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI UNICORN</title>
+
+    <link type="Image/x-icon" href="./icons/favicon.ico" rel="icon" />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Login page -->
+      <section class="login-page">
+        <!-- Background div -->
+        <div class="login-page__background">
+          <p class="login-page__background-text">
+            Photo by
+            <a
+              class="login-page__background-link"
+              href="https://unsplash.com/@irrabagon"
+              >Alexandr Popadin</a
+            >
+          </p>
+        </div>
+
+        <!-- Login-page container -->
+        <aside class="login-window">
+          <div class="login-window__wrapper">
+            <!-- Logo div-->
+            <a href="#"
+              ><div class="login-window__logo logo">
+                <img
+                  src="./img/logo_img.png"
+                  alt="unicorn-logo"
+                  class="logo__icon"
+                />
+                <img
+                  src="./icons/logo_text.svg"
+                  alt="unicorn-logo-text"
+                  class="logo__text"
+                /></div
+            ></a>
+
+            <!-- Title div-->
+            <h2 class="login-window__title">Nice to see you again</h2>
+
+            <!-- Login form -->
+            <form action="" method="post" class="login-form form">
+              <!-- Login form group -->
+              <div class="form__group">
+                <label for="email" class="form__label">Login</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Email or phone number"
+                  required
+                  class="form__input"
+                />
+              </div>
+
+              <!-- Password form group -->
+              <div class="form__group">
+                <label for="password" class="form__label">Password</label>
+                <div class="form__input-wrapper">
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter password"
+                    required
+                    class="form__input"
+                  />
+                  <!-- Класс задать -->
+                  <button class="form__eye">
+                    <img src="./icons/login_icon.svg" alt="pass-eye" />
+                  </button>
+                </div>
+              </div>
+
+              <!-- Remember me form group -->
+              <div class="form__remember-me">
+                <div class="form__checkbox">
+                  <label class="form__switch switch">
+                    <input type="checkbox" />
+                    <span class="switch__slider switch__round"></span>
+                  </label>
+                  <span class="form__checkbox-text">Remember me</span>
+                </div>
+
+                <a href="#" class="form__forgot">Forgot password?</a>
+              </div>
+
+              <!-- Buttons form group -->
+              <div class="form__submit">
+                <button type="submit" class="form__btn btn">Sign In</button>
+                <div class="form__btn-line"></div>
+              </div>
+            </form>
+
+            <!-- Google button -->
+            <button class="form__btn btn btn_google">
+              <img
+                src="./icons/google.svg"
+                alt="google"
+                class="form__btn-img"
+              />
+              Or sign in with Google
+            </button>
+
+            <!-- Signup div -->
+            <div class="login-window__signup">
+              <p class="login-window__signup-text">Don't have an account?</p>
+              <a href="#" class="login-window__signup-link">Sign up now</a>
+            </div>
+          </div>
+
+          <!-- Logo Adaptive div-->
+          <a href="#"
+            ><div class="login-window__logo logo logo_adaptive">
+              <img
+                src="./img/logo_img.png"
+                alt="unicorn-logo"
+                class="logo__icon"
+              />
+              <img
+                src="./icons/logo_text.svg"
+                alt="unicorn-logo-text"
+                class="logo__text"
+              /></div
+          ></a>
+
+          <!-- Bottom div -->
+          <div class="login-window__bottom">
+            <div class="login-window__bottom-div">
+              <img
+                src="/icons/figma.svg"
+                alt=""
+                class="login-window__bottom-img"
+              />
+              <a href="#" class="login-window__bottom-link">@uiunicorn</a>
+            </div>
+            <p class="login-window__copyright">© Perfect Login 2021</p>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

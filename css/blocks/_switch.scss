@@ -1,0 +1,60 @@
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+
+  input {
+    display: none;
+  }
+
+  &__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f2f2f2;
+    border: 1px solid #e5e5e5;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+
+      box-shadow: 1px 1px 1px #e5e5e5;
+
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+    }
+  }
+
+  &__round {
+    border-radius: 12px;
+    &:before {
+      border-radius: 50%;
+    }
+  }
+}
+
+input {
+  &:checked + .switch__slider {
+    background-color: #2196f3;
+  }
+
+  &:focus + .switch__slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+
+  &:checked + .switch__slider:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+  }
+}
